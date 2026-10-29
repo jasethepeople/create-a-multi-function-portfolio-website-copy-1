@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Clark - Portfolio</title>
+    <link rel="stylesheet" href="css/logartis-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/marketing.css">
+    <link rel="stylesheet" href="css/unique-style.css">
+    <style>
+        /* Sound toggle button */
+        .sound-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .sound-toggle:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .sound-toggle svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        
+        /* Navigation styles */
+        .nav-item {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item:hover::before {
+            width: 100%;
+        }
+        
+        /* Color-coded navigation */
+        .nav-item.photography { color: #e74c3c; }
+        .nav-item.books { color: #3498db; }
+        .nav-item.music { color: #9b59b6; }
+        .nav-item.blog { color: #2ecc71; }
+        .nav-item.contact { color: #f39c12; }
+        .nav-item.hire-me { color: #1abc9c; }
+    </style>
+</head>
+<body>
+    <!-- Sound toggle button -->
+    <div class="sound-toggle" id="soundToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+        </svg>
+    </div>
+
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Jason Clark</h1>
+                <p class="hero-subtitle">Developer • Photographer • Author • Musician</p>
+                <div class="hero-cta">
+                    <a href="#about" class="cta-button">Discover My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about" class="nav-item about">About</a></li>
+                <li><a href="#photography" class="nav-item photography">Photography</a></li>
+                <li><a href="#books" class="nav-item books">Books</a></li>
+                <li><a href="#music" class="nav-item music">Music</a></li>
+                <li><a href="#blog" class="nav-item blog">Blog</a></li>
+                <li><a href="#contact" class="nav-item contact">Contact</a></li>
+                <li><a href="#hire-me" class="nav-item hire-me">Hire Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- About section -->
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm Jason Clark, a multidisciplinary creative professional with expertise in information systems, quality control, and machine operation. My passion extends across various creative domains including JavaScript development, graphic design, photography, writing, and music production.</p>
+                        <p>With a diverse skill set and years of experience, I offer consulting services across all my areas of expertise. Whether you need technical solutions, creative direction, or artistic collaboration, I bring a unique perspective and professional approach to every project.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Jason Clark" onerror="this.src='images/backgrounds/misty_background.jpg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography section -->
+        <section id="photography" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Photography</h2>
+                <div class="photography-container">
+                    <!-- Columns will be created by column-scroll.js -->
+                    <div class="column">
+                        <div class="photo-item">
+                            <img src="images/nature_sunset.jpg" alt="Nature Sunset">
+                            <div class="photo-caption">Sunset Landscape</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/nature_blue.jpg" alt="Nature Blue">
+                            <div class="photo-caption">Blue Landscape</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo-item">
+                            <img src="images/nature_moon.jpg" alt="Nature Moon">
+                            <div class="photo-caption">Moon Shot</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/nature_wonders.jpg" alt="Nature Wonders">
+                            <div class="photo-caption">Natural Wonders</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo-item">
+                            <img src="images/backgrounds/misty_background.jpg" alt="Misty Background">
+                            <div class="photo-caption">Misty Forest</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books section -->
+        <section id="books" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Books</h2>
+                <div class="books-grid">
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="images/book1.jpg" alt="Book 1" onerror="this.src='images/backgrounds/misty_background.jpg'">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Book Title 1</h3>
+                            <p class="book-description">A captivating journey through imagination and reality, exploring themes of identity and purpose.</p>
+                            <div class="book-actions">
+                                <a href="#" class="book-button">Purchase</a>
+                                <a href="#" class="book-button secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="images/book2.jpg" alt="Book 2" onerror="this.src='images/backgrounds/misty_background.jpg'">
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Book Title 2</h3>
+                            <p class="book-description">An exploration of human connection in the digital age, weaving together stories of love and loss.</p>
+                            <div class="book-actions">
+                                <a href="#" class="book-button">Purchase</a>
+                                <a href="#" class="book-button secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music section -->
+        <section id="music" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Music</h2>
+                <div class="music-container">
+                    <div class="music-player">
+                        <div class="player-controls">
+                            <button class="play-button" id="playButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">0:00 / 0:00</div>
+                        </div>
+                        <audio id="audioPlayer" src="sounds/sample-music.mp3"></audio>
+                        <!-- Visualizer container will be added by music-visualizer.js -->
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-item active" data-src="sounds/sample-music.mp3">
+                            <div class="track-number">01</div>
+                            <div class="track-info">
+                                <div class="track-title">Sample Track 1</div>
+                                <div class="track-artist">Jason Clark</div>
+                            </div>
+                            <div class="track-duration">3:45</div>
+                        </div>
+                        <div class="playlist-item" data-src="sounds/sample-music.mp3">
+                            <div class="track-number">02</div>
+                            <div class="track-info">
+                                <div class="track-title">Sample Track 2</div>
+                                <div class="track-artist">Jason Clark</div>
+                            </div>
+                            <div class="track-duration">4:12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section -->
+        <section id="blog" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Blog</h2>
+                <div class="blog-container">
+                    <div class="blog-filters">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="photography">Photography</button>
+                        <button class="filter-button" data-filter="writing">Writing</button>
+                        <button class="filter-button" data-filter="music">Music</button>
+                    </div>
+                    <div class="blog-grid">
+                        <div class="blog-post" data-category="photography">
+                            <div class="post-image">
+                                <img src="images/nature_sunset.jpg" alt="Blog Post 1">
+                            </div>
+                            <div class="post-content">
+                                <h3 class="post-title">Capturing the Perfect Sunset</h3>
+                                <div class="post-meta">
+                                    <span class="post-date">April 10, 2025</span>
+                                    <span class="post-category">Photography</span>
+                                </div>
+                                <p class="post-excerpt">Learn the techniques I use to capture stunning sunset photographs in any environment.</p>
+                                <a href="#" class="post-link">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-post" data-category="writing">
+                            <div class="post-image">
+                                <img src="images/backgrounds/misty_background.jpg" alt="Blog Post 2">
+                            </div>
+                            <div class="post-content">
+                                <h3 class="post-title">Finding Your Voice as a Writer</h3>
+                                <div class="post-meta">
+                                    <span class="post-date">March 25, 2025</span>
+                                    <span class="post-category">Writing</span>
+                                </div>
+                                <p class="post-excerpt">Developing your unique writing style is a journey. Here's how I found mine.</p>
+                                <a href="#" class="post-link">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-post" data-category="music">
+                            <div class="post-image">
+                                <img src="images/nature_blue.jpg" alt="Blog Post 3">
+                            </div>
+                            <div class="post-content">
+                                <h3 class="post-title">The Art of Music Production</h3>
+                                <div class="post-meta">
+                                    <span class="post-date">February 15, 2025</span>
+                                    <span class="post-category">Music</span>
+                                </div>
+                                <p class="post-excerpt">A behind-the-scenes look at my music production process and the tools I use.</p>
+                                <a href="#" class="post-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           
+(Content truncated due to size limit. Use line ranges to read in chunks)

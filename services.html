@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Clark - Multidisciplinary Creative Professional</title>
+    <link rel="stylesheet" href="css/unique-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas for birds animation -->
+    <canvas id="birds-canvas"></canvas>
+    
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Jason Clark Logo">
+                <div class="logo-text">Jason Clark</div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="images/nature_sunset.jpeg" alt="Nature Photography by Jason Clark" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">Jason Clark</h1>
+            <h2 class="hero-subtitle">Multidisciplinary Creative Professional</h2>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Hire Me</a>
+                <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            Discover More
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+    
+    <!-- Professional Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Premium Services</h2>
+            
+            <!-- Service Introduction -->
+            <div class="services-intro">
+                <div class="services-intro-content">
+                    <h3 class="text-gradient">Elevate Your Projects with Expert Consultation</h3>
+                    <p>With over 15 years of diverse professional experience, I offer premium consulting services across multiple disciplines. Whether you need technical expertise, creative direction, or project management, I deliver exceptional results that exceed expectations.</p>
+                    <div class="stats-section">
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="150">0</span>+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-intro-image">
+                    <img src="images/nature_wonders.jpeg" alt="Professional Portrait">
+                </div>
+            </div>
+            
+            <!-- Service Filters -->
+            <div class="service-filters">
+                <button class="service-filter active" data-filter="all">All Services</button>
+                <button class="service-filter" data-filter="consulting">Consulting</button>
+                <button class="service-filter" data-filter="photography">Photography</button>
+                <button class="service-filter" data-filter="music">Music Production</button>
+                <button class="service-filter" data-filter="writing">Writing</button>
+                <button class="service-filter" data-filter="development">Development</button>
+            </div>
+            
+            <!-- Service Packages -->
+            <div class="service-packages">
+                <!-- Consulting Service Package -->
+                <div class="service-package service-item consulting">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="package-title">Information Systems Consulting</h3>
+                        <div class="package-price">From $150/hr</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Expert system analysis and optimization</li>
+                            <li><i class="fas fa-check"></i> Quality control implementation</li>
+                            <li><i class="fas fa-check"></i> Process automation solutions</li>
+                            <li><i class="fas fa-check"></i> Technical documentation</li>
+                            <li><i class="fas fa-check"></i> Staff training and knowledge transfer</li>
+                        </ul>
+                        <div class="package-cta">
+                            <a href="#contact" class="btn btn-primary">Request Consultation</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photography Service Package -->
+                <div class="service-package service-item photography">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="package-title">Professional Photography</h3>
+                        <div class="package-price">From $500/session</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Nature and landscape photography</li>
+                            <li><i class="fas fa-check"></i> Commercial product photography</li>
+                            <li><i class="fas fa-check"></i> Event coverage</li>
+                            <li><i class="fas fa-check"></i> Professional editing and retouching</li>
+                            <li><i class="fas fa-check"></i> High-resolution digital deliverables</li>
+                        </ul>
+                        <div class="package-cta">
+                            <a href="#contact" class="btn btn-primary">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Production Service Package -->
+                <div class="service-package service-item music">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="package-title">Music Production</h3>
+                        <div class="package-price">From $1,000/track</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Original composition and arrangement</li>
+                            <li><i class="fas fa-check"></i> Professional recording and mixing</li>
+                            <li><i class="fas fa-check"></i> Custom soundtrack creation</li>
+                            <li><i class="fas fa-check"></i> Vocal production and editing</li>
+                            <li><i class="fas fa-check"></i> Commercial licensing options</li>
+                        </ul>
+                        <div class="package-cta">
+                            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Writing Service Package -->
+                <div class="service-package service-item writing">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3 class="package-title">Professional Writing</h3>
+                        <div class="package-price">From $0.50/word</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Book ghostwriting and editing</li>
+                            <li><i class="fas fa-check"></i> Technical documentation</li>
+                            <li><i class="fas fa-check"></i> Content creation for websites and blogs</li>
+                            <li><i class="fas fa-check"></i> Script writing for media projects</li>
+                            <li><i class="fas fa-check"></i> Publishing consultation</li>
+                        </ul>
+                        <div class="package-cta">
+                            <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Service Package -->
+                <div class="service-package service-item development">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="package-title">Web Development</h3>
+                        <div class="package-price">From $2,500/project</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Custom website development</li>
+                            <li><i class="fas fa-check"></i> JavaScript programming</li>
+                            <li><i class="fas fa-check"></i> Responsive design implementation</li>
+                            <li><i class="fas fa-check"></i> E-commerce solutions</li>
+                            <li><i class="fas fa-check"></i> Ongoing maintenance and support</li>
+                        </ul>
+                        <div class="package-cta">
+                            <a href="#contact" class="btn btn-primary">Request Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="services-cta">
+                <h3>Ready to elevate your project with professional expertise?</h3>
+                <p>Contact me today to discuss how my services can help you achieve exceptional results.</p>
+                <a href="#contact" class="btn btn-primary cta-button">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Professional Expertise</h2>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <h3>Diverse Skillset, Exceptional Results</h3>
+                    <p>With a comprehensive background spanning technical and creative disciplines, I bring a unique perspective to every project. My diverse expertise allows me to approach challenges holistically, delivering innovative solutions that exceed expectations.</p>
+                    <p>Whether you need technical implementation, creative direction, or strategic consulting, I have the skills and experience to help you succeed.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Information Systems</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Quality Control</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript Development</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Photography</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Music Production</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Writing & Publishing</span>
+                            <span>94%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="94"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Jason's expertise in information systems transformed our business operations. His strategic approach to quality control implementation resulted in a 30% increase in ef
+(Content truncated due to size limit. Use line ranges to read in chunks)

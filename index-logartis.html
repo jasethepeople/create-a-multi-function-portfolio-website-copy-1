@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Clark - Illustration and Development</title>
+    <link rel="stylesheet" href="css/logartis-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header/Navigation -->
+        <header>
+            <nav class="nav-links">
+                <li><a href="#about" class="about">About</a></li>
+                <li><a href="#photography" class="illustration">Photography</a></li>
+                <li><a href="#books" class="design">Books</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+            </nav>
+            <button class="sound-toggle" id="soundToggle">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content fade-in">
+                <h1>Jason Clark</h1>
+                <h2>Illustration and Development</h2>
+            </div>
+            <div class="scroll-indicator">
+                Scroll down
+            </div>
+        </section>
+
+        <!-- About Section (Hidden initially) -->
+        <section class="content-page" id="about-page">
+            <button class="close-btn" data-target="about-page">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Jason Clark">
+                </div>
+                <div class="about-content">
+                    <h2>Jason Clark</h2>
+                    <p>Full stack developer and creative professional with more than a decade of experience in creating interactive content. Specializing in information systems, quality control, and machine operation with skills in JavaScript development, graphic design, and IT support.</p>
+                    <p>My diverse background allows me to approach projects from multiple perspectives, combining technical expertise with creative vision.</p>
+                    
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Photography</span>
+                        <span class="skill-tag">Book Publishing</span>
+                        <span class="skill-tag">Music Production</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">IT Support</span>
+                        <span class="skill-tag">Quality Control</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Section (Hidden initially) -->
+        <section class="content-page" id="photography-page">
+            <button class="close-btn" data-target="photography-page">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Photography</h2>
+            <p>I create photographs for nature, landscapes, and artistic projects.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/nature_sunset.jpeg" alt="Nature Sunset">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/nature_moon.jpeg" alt="Nature Moon">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/nature_wonders.jpeg" alt="Nature Wonders">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/nature_blue.jpeg" alt="Nature Blue">
+                </div>
+                <!-- More portfolio items would be added here -->
+            </div>
+        </section>
+
+        <!-- Books Section (Hidden initially) -->
+        <section class="content-page" id="books-page">
+            <button class="close-btn" data-target="books-page">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Books</h2>
+            <p>I write and publish books across various genres.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/book1.jpg" alt="Book 1">
+                    <div class="portfolio-overlay">
+                        <h3>Book Title 1</h3>
+                        <a href="#" class="btn-purchase">Purchase</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/book2.jpg" alt="Book 2">
+                    <div class="portfolio-overlay">
+                        <h3>Book Title 2</h3>
+                        <a href="#" class="btn-purchase">Purchase</a>
+                    </div>
+                </div>
+                <!-- More books would be added here -->
+            </div>
+        </section>
+
+        <!-- Music Section (Hidden initially) -->
+        <section class="content-page" id="music-page">
+            <button class="close-btn" data-target="music-page">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Music</h2>
+            <p>I compose and produce music for various projects.</p>
+            
+            <div class="music-player">
+                <h3>Featured Track</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="music-controls">
+                    <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="pause-btn" style="display: none;"><i class="fas fa-pause"></i></button>
+                    <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/album1.jpg" alt="Album 1">
+                    <div class="portfolio-overlay">
+                        <h3>Album Title 1</h3>
+                        <a href="#" class="btn-listen">Listen</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/album2.jpg" alt="Album 2">
+                    <div class="portfolio-overlay">
+                        <h3>Album Title 2</h3>
+                        <a href="#" class="btn-listen">Listen</a>
+                    </div>
+                </div>
+                <!-- More music would be added here -->
+            </div>
+        </section>
+
+        <!-- Contact Section (Hidden initially) -->
+        <section class="content-page" id="contact-page">
+            <button class="close-btn" data-target="contact-page">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Contact</h2>
+            <p>Get in touch for collaborations, freelance work, or just to say hello.</p>
+            
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location, City, Country</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

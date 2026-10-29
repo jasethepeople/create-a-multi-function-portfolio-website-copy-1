@@ -1,0 +1,456 @@
+/* 
+* Redesigned Stylesheet for Jason Clark's Portfolio Website
+* Based on logartis.info aesthetic
+* Version: 2.0
+*/
+
+/* ===== GLOBAL STYLES ===== */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --background-gray: #e0e0e0;
+    --dark-gray: #333333;
+    --medium-gray: #888888;
+    --light-gray: #f5f5f5;
+    --green-highlight: #4CAF50;
+    --blue-highlight: #2196F3;
+    --orange-highlight: #FF9800;
+    --pink-highlight: #E91E63;
+    --font-heading: 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Helvetica Neue', Arial, sans-serif;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-gray);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--medium-gray);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-explore {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-explore:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* ===== HEADER/NAVIGATION ===== */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    background-color: transparent;
+    z-index: 1000;
+    padding: 1.5rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-weight: 400;
+    position: relative;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+}
+
+.nav-links a.about {
+    border: 1px solid var(--green-highlight);
+}
+
+.nav-links a.about:hover {
+    background-color: var(--green-highlight);
+    color: var(--secondary-color);
+}
+
+.nav-links a.illustration {
+    border: 1px solid var(--blue-highlight);
+}
+
+.nav-links a.illustration:hover {
+    background-color: var(--blue-highlight);
+    color: var(--secondary-color);
+}
+
+.nav-links a.design {
+    border: 1px solid var(--orange-highlight);
+}
+
+.nav-links a.design:hover {
+    background-color: var(--orange-highlight);
+    color: var(--secondary-color);
+}
+
+.nav-links a.contact {
+    border: 1px solid var(--pink-highlight);
+}
+
+.nav-links a.contact:hover {
+    background-color: var(--pink-highlight);
+    color: var(--secondary-color);
+}
+
+.sound-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    background-color: var(--dark-gray);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 100vh;
+    background-color: var(--background-gray);
+    background-image: url('../images/misty-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* ===== CONTENT PAGES ===== */
+.content-page {
+    min-height: 100vh;
+    background-color: #000000;
+    color: var(--secondary-color);
+    padding: 2rem;
+    display: none;
+}
+
+.content-page.active {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== PORTFOLIO GRID ===== */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.about-image {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skill-tag {
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-gray);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* ===== MUSIC PLAYER ===== */
+.music-player {
+    background-color: var(--dark-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.play-btn, .pause-btn, .next-btn, .prev-btn {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 4px;
+    background-color: var(--medium-gray);
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    width: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media screen and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        background-color: var(--background-gray);
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .nav-links li {
+        margin: 0 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease forwards;
+}
